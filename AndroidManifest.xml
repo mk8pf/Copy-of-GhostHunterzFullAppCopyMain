@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ghosthunterzfullapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        <activity
+            android:name=".Placeholder"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_splash_screen"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LauncherMenu"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_launcher_menu"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MoveBallTest"
+            android:label="@string/MoveBallTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlayGameActivity"
+            android:label="@string/title_activity_luke_basic_game"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>
